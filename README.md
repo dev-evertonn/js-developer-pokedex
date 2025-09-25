@@ -1,1 +1,2 @@
 # Trilha JS Developer - Pokedex
+[text](assets) [text](assets/css) [text](assets/css/details.css) [text](assets/css/global.css) [text](assets/css/pokedex.css) [text](assets/js) [text](assets/js/main.js) [text](assets/js/poke-api.js) [text](assets/js/pokemon-details.js) [text](assets/js/pokemon-model.js) [text](assets/pages) [text](assets/pages/details.html) [text](index.html) [text](n.txt) [text](README.md)

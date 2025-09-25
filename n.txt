@@ -1,0 +1,54 @@
+<div class="content-top">
+            <div class="buttons">
+                <a href="../../index.html"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt=""
+                        srcset=""></a>
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/8978/8978668.png" alt=""></a>
+            </div>
+            <div class="detail-principal">
+                <div class="name-number">
+                    <h1 id="name">Bulbasaur</h1>
+                    <ol>
+                        <li>Poison</li>
+                        <li>grass</li>
+                    </ol>
+                </div>
+                <p id="number">#001</p>
+            </div>
+
+        </div>
+
+        <div class="content-bottom">
+            <img id="photo"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                alt="">
+            <div class="details">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Base Stats</a></li>
+                    <li><a href="#">Evoltution</a></li>
+                    <li><a href="#">Moves</a></li>
+                </ul>
+
+                <div class"description">
+                    <table>
+                        <tr>
+                            <th>Species</th>
+                            <td>eonerovo</td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>eonerovo</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>eonerovo</td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td>eonerovo</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
