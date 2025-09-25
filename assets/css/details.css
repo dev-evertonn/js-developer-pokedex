@@ -9,10 +9,83 @@ body {
     background-color: #f6f8fc;
 }
 
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
 .content {
     width: 100vw;
     height: 100vh;
-    background-color: #77c850;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
 }
 
 .content-top {
@@ -60,6 +133,17 @@ body {
     }
 }
 
+.img-pokemon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        height: 218px;
+    }
+}
+
 .content-bottom {
     width: 100%;
     height: 50%;
@@ -70,14 +154,7 @@ body {
     border-radius: 2rem 2rem 0 0;
     text-align: center;
 
-    & img {
-        position: relative;
-        top: -190px;
-    }
-
     & .details {
-        position: relative;
-        top: -150px;
         display: flex;
         flex-direction: column;
         gap: 30px;

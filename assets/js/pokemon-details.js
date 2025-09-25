@@ -1,11 +1,11 @@
-const pokeApi = {}
-const pokemonContent = document.getElementById('content')
+const pokemonContent = document.getElementById('body')
 const params = new URLSearchParams(window.location.search);
 const pokemonId = params.get("id");
 
 
 function convertPokemonToHtml(pokemon) {
     return `
+    <section id="content" class="content ${pokemon.type}">
         <div class="content-top">
             <div class="buttons">
                 <a href="../../index.html"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt=""
@@ -24,10 +24,11 @@ function convertPokemonToHtml(pokemon) {
 
         </div>
 
+        <div class="img-pokemon">
+            <img id="photo" src="${pokemon.img}" alt="foto do pokemon">
+        </div>
+
         <div class="content-bottom">
-            <img id="photo"
-                src="${pokemon.img}"
-                alt="">
             <div class="details">
                 <ul>
                     <li><a href="#">About</a></li>
@@ -58,35 +59,8 @@ function convertPokemonToHtml(pokemon) {
                 </div>
             </div>
         </div>
+    </section>
     `
-}
-
-
-function convertPokeApiToPokemon(pokeDetail) {
-    const pokemon = new Pokemon()
-    pokemon.number = pokeDetail.id
-    pokemon.name = pokeDetail.name
-
-    const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
-    pokemon.types = types
-
-    pokemon.img = pokeDetail.sprites.other.dream_world.front_default
-    pokemon.abilities = pokeDetail.abilities.map((slot) => slot.ability.name)
-    pokemon.weight = pokeDetail.weight
-    pokemon.height = pokeDetail.height
-    pokemon.species = pokeDetail.species.name
-
-    return pokemon
-}
-
-pokeApi.getPokemon = (id) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`
-
-    return fetch(url)
-        .then((response) => response.json())
-        // Ensure convertPokeApiDetailToPokemon returns an array of promises
-        .then(convertPokeApiToPokemon)
-        .then((pokemonsDetails) => pokemonsDetails)
 }
 
 function loadPokemon(id) {
@@ -95,6 +69,7 @@ function loadPokemon(id) {
         pokemonContent.innerHTML = newHtml
     })
 }
+
 // Se houver ID, carrega o Pokémon
 if (pokemonId) {
     loadPokemon(pokemonId);
